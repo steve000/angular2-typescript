@@ -40,8 +40,12 @@
 
 数据库配置在application-dev.yaml文件中修改
 
+注：
+在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
 
-
+  set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
+  
+  npm install node-sass
 
 
 This application was generated using JHipster 4.0.8, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.8](https://jhipster.github.io/documentation-archive/v4.0.8).
