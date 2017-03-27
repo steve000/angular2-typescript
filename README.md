@@ -1,4 +1,49 @@
 # schintacloud
+
+环境准备：npm+yarn
+
+微服务模块：
+
+	1、服务注册器：jhipster-registry
+	
+	2、用户认证授权：jhipster-UAA
+	
+	3、网关：jhipster-gateway
+	
+	4、其他微服务提供者
+	
+
+1、服务注册器
+
+服务注册器下载地址：https://github.com/jhipster/jhipster-registry
+
+下载后，运行 mvnw.cmd 启动，默认端口为8761
+
+
+2、用户认证授权
+
+提供用户的认证和授权的服务，请剪出 git@101.37.16.131:wangyuannan/cqUAA.git 工程
+
+剪出后，运行“yarn install”
+
+运行 mvnw.cmd 启动服务，设置的端口为9090
+
+3、网关
+
+带有前端界面的网关工程。请剪出 git@101.37.16.131:wangyuannan/cqGateway.git 工程
+
+剪出后，运行“yarn install”
+
+运行 mvnw.cmd 启动服务，设置的端口为9000
+
+上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库
+
+数据库配置在application-dev.yaml文件中修改
+
+
+
+
+
 This application was generated using JHipster 4.0.8, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.8](https://jhipster.github.io/documentation-archive/v4.0.8).
 
 This is a "gateway" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
