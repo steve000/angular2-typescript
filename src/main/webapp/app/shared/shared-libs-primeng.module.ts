@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {
     SharedModule,
-	// Input
+    // Input
     AutoCompleteModule,
     CalendarModule,
     CheckboxModule,
@@ -80,8 +80,8 @@ import {
 } from 'primeng/primeng';
 
 const primeNgModules = [
-	SharedModule,
-	// Input
+    SharedModule,
+    // Input
     AutoCompleteModule,
     CalendarModule,
     CheckboxModule,
