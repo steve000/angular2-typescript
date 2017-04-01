@@ -5,13 +5,15 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgJhipsterModule } from 'ng-jhipster';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { SchintacloudSharedLibsPrimeNgModule } from './';
 
 @NgModule({
     imports: [
         NgbModule.forRoot(),
         NgJhipsterModule.forRoot({
         }),
-        InfiniteScrollModule
+        InfiniteScrollModule,
+        SchintacloudSharedLibsPrimeNgModule
     ],
     exports: [
         FormsModule,
@@ -19,7 +21,8 @@ import { InfiniteScrollModule } from 'angular2-infinite-scroll';
         CommonModule,
         NgbModule,
         NgJhipsterModule,
-        InfiniteScrollModule
+        InfiniteScrollModule,
+        SchintacloudSharedLibsPrimeNgModule
     ]
 })
 export class SchintacloudSharedLibsModule {}

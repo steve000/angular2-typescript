@@ -1,0 +1,170 @@
+import { NgModule } from '@angular/core';
+import {
+    SharedModule,
+	// Input
+    AutoCompleteModule,
+    CalendarModule,
+    CheckboxModule,
+    ChipsModule,
+    DropdownModule,
+    EditorModule,
+    InputSwitchModule,
+    InputTextModule,
+    InputTextareaModule,
+    ListboxModule,
+    InputMaskModule,
+    MultiSelectModule,
+    PasswordModule,
+    RadioButtonModule,
+    RatingModule,
+    SliderModule,
+    SpinnerModule,
+    SelectButtonModule,
+    ToggleButtonModule,
+    TriStateCheckboxModule,
+    // Button
+    ButtonModule,
+    SplitButtonModule,
+    // Data
+    CarouselModule,
+    DataGridModule,
+    DataListModule,
+    DataScrollerModule,
+    DataTableModule,
+    OrderListModule,
+    GMapModule,
+    PaginatorModule,
+    PickListModule,
+    ScheduleModule,
+    TreeModule, TreeNode, TreeTableModule,
+    // Panel
+    AccordionModule,
+    FieldsetModule,
+    PanelModule,
+    TabViewModule,
+    ToolbarModule,
+    // Overlay
+    ConfirmDialogModule,
+    ConfirmationService,
+    DialogModule,
+    LightboxModule,
+    OverlayPanelModule,
+    TooltipModule,
+    FileUploadModule,
+    // Menu
+    MenuModule, MenuItem,
+    BreadcrumbModule,
+    ContextMenuModule,
+    MegaMenuModule,
+    MenubarModule,
+    PanelMenuModule,
+    SlideMenuModule,
+    StepsModule,
+    TabMenuModule,
+    TieredMenuModule,
+    // Charts
+    ChartModule,
+    // Messages
+    MessagesModule,
+    GrowlModule,
+    // Multimedia
+    GalleriaModule,
+    // Drag&Drop
+    DragDropModule,
+    BlockUIModule,
+    CaptchaModule,
+    InplaceModule,
+    ProgressBarModule,
+    CodeHighlighterModule,
+    TerminalModule
+} from 'primeng/primeng';
+
+const primeNgModules = [
+	SharedModule,
+	// Input
+    AutoCompleteModule,
+    CalendarModule,
+    CheckboxModule,
+    ChipsModule,
+    DropdownModule,
+    EditorModule,
+    InputSwitchModule,
+    InputTextModule,
+    InputTextareaModule,
+    ListboxModule,
+    InputMaskModule,
+    MultiSelectModule,
+    PasswordModule,
+    RadioButtonModule,
+    RatingModule,
+    SliderModule,
+    SpinnerModule,
+    SelectButtonModule,
+    ToggleButtonModule,
+    TriStateCheckboxModule,
+    // Button
+    ButtonModule,
+    SplitButtonModule,
+    // Data
+    CarouselModule,
+    DataGridModule,
+    DataListModule,
+    DataScrollerModule,
+    DataTableModule,
+    OrderListModule,
+    GMapModule,
+    PaginatorModule,
+    PickListModule,
+    ScheduleModule,
+    TreeModule,
+    // TreeNode,
+    TreeTableModule,
+    // Panel
+    AccordionModule,
+    FieldsetModule,
+    PanelModule,
+    TabViewModule,
+    ToolbarModule,
+    // Overlay
+    ConfirmDialogModule,
+    // ConfirmationService,
+    DialogModule,
+    LightboxModule,
+    OverlayPanelModule,
+    TooltipModule,
+    FileUploadModule,
+    // Menu
+    MenuModule,
+    // MenuItem,
+    BreadcrumbModule,
+    ContextMenuModule,
+    MegaMenuModule,
+    MenubarModule,
+    PanelMenuModule,
+    SlideMenuModule,
+    StepsModule,
+    TabMenuModule,
+    TieredMenuModule,
+    // Charts
+    ChartModule,
+    // Messages
+    MessagesModule,
+    GrowlModule,
+    // Multimedia
+    GalleriaModule,
+    // Drag&Drop
+    DragDropModule,
+    BlockUIModule,
+    CaptchaModule,
+    InplaceModule,
+    ProgressBarModule,
+    CodeHighlighterModule,
+    TerminalModule
+];
+
+@NgModule({
+    imports: primeNgModules,
+    exports: primeNgModules,
+    providers: [ConfirmationService]
+})
+export class SchintacloudSharedLibsPrimeNgModule {}
