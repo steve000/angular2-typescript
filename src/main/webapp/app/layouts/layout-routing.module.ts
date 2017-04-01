@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Resolve } from '@angular/router';
 
-import { navbarRoute } from '../app.route';
+import { navbarRoute, sidebarRoute } from '../app.route';
 import { errorRoute } from './';
 
 let LAYOUT_ROUTES = [
     navbarRoute,
+    sidebarRoute,
     ...errorRoute
 ];
 
