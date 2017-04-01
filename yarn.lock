@@ -5615,6 +5615,10 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
+primeng@^2.0.3:
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/primeng/download/primeng-2.0.5.tgz#24e1e3dc820c2f04dc69c9fb0ff7080ddedf4c21"
+
 private@^0.1.6, private@~0.1.5:
   version "0.1.7"
   resolved "http://registry.npm.taobao.org/private/download/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"

@@ -22,7 +22,24 @@
                 <a class="alert-link" routerLink="register">Register a new account</a>
             </div>
         </div>
-
+        <!-- primeng example start -->
+        <p-panel header="这里是例子，primeng如何使用">
+            <p>这里是一个panel。</p>
+            <p>比如里面嵌套一个accordion</p>
+            <p-accordion>
+                <p-accordionTab header="水情">
+                   <a href="#">普通链接</a>
+                </p-accordionTab>
+                <p-accordionTab header="雨情">
+                    <button pButton type="button" label="我是一个按钮"></button>
+                </p-accordionTab>
+                <p-accordionTab header="其他">
+                    <p>选择日期：</p>
+                    <p-calendar [(ngModel)]="value"></p-calendar>
+                </p-accordionTab>
+            </p-accordion>
+        </p-panel>
+        <!-- end -->
         <p>
             If you have any question on JHipster:
         </p>

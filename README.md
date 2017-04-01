@@ -40,6 +40,8 @@
 
 数据库配置在application-dev.yaml文件中修改
 
+可另起一个控制台，运行yarn start，修改本地文件之后会自动编译发布，端口为9001
+
 注：
 在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
 
