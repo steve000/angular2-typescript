@@ -18,7 +18,7 @@ spring:
     cloud:
         config:
             fail-fast: true
-            uri: http://admin:${jhipster.registry.password}@localhost:8761/config
+            uri: http://admin:${jhipster.registry.password}@10.172.71.172:8761/config
             # name of the config server's property source (file.yml) that we want to use
             name: schintacloud
             profile: dev # profile(s) of the property source
