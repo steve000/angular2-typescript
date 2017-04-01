@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
     ]
 })
 export class SidebarComponent implements OnInit {
+    value: string;
     constructor() {}
 
     ngOnInit() {
