@@ -40,9 +40,12 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://127.0.0.1:3306/schintacloud?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: root
-        password:
+        url: jdbc:mysql://101.37.16.131:3306/schintacloud?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: test
+        password: Schinta#1
+#        url: jdbc:mysql://127.0.0.1:3306/schintacloud?useUnicode=true&characterEncoding=utf8&useSSL=false
+#        username: root
+#        password:
         hikari:
             data-source-properties:
                 cachePrepStmts: true
