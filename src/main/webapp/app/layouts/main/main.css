@@ -1,17 +1,12 @@
 /* ==========================================================================
 Main
 ========================================================================== */
-html, body{
-    height: 100%;
-}
-
 .sidebar{
     width: 260px;
     float: left;
     height: 100%;
-    background: #ddd;
+    background: #DDDDDD;
 }
-
 .main{
     margin-left: 260px;
 }
