@@ -20,7 +20,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         contentBase: './target/www',
         proxy: [{
             context: [
-                '/uaa',
+                '/schintauaa',
                 '/api',
                 '/management',
                 '/swagger-resources',
