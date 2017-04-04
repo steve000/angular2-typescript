@@ -29,13 +29,9 @@
     "sockjs-client": "1.1.2",
     "swagger-ui": "2.2.10",
     "tether": "1.4.0",
-<<<<<<< HEAD
     "webstomp-client": "1.0.5",
-    "zone.js": "0.7.6"
-=======
     "zone.js": "0.7.6",
-    "primeng": "^2.0.3"
->>>>>>> e5c896a0a6bf1bb1d57da9b98d75fb5ffbbf97cf
+	"primeng": "^2.0.3"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0-beta.28.3",
