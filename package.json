@@ -31,7 +31,7 @@
     "tether": "1.4.0",
     "webstomp-client": "1.0.5",
     "zone.js": "0.7.6",
-	"primeng": "^2.0.3"
+    "primeng": "^2.0.3"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0-beta.28.3",
