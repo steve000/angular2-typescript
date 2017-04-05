@@ -19,6 +19,7 @@
 
 下载后，运行 mvnw.cmd 启动，默认端口为8761
 
+如果在公司内部环境进行开发，10.172.71.172:8761 已用docker 启动了服务注册，可以直接使用该服务，以节省本地资源。
 
 2、用户认证授权
 
@@ -28,19 +29,19 @@
 
 运行 mvnw.cmd 启动服务，设置的端口为9090
 
+注明：如果在公司内部环境进行开发，10.172.71.172:9090 已用docker 启动了uaa服务，可以直接使用该服务，以节省本地资源。
+
 3、网关
 
 带有前端界面的网关工程。请剪出 git@101.37.16.131:wangyuannan/cqGateway.git 工程
 
-剪出后，运行“yarn install”
+剪出后，运行“yarn install”，安装工程依赖包。
 
-运行 mvnw.cmd 启动服务，设置的端口为9000
+运行 mvnw.cmd 启动后台服务，设置的端口为9000
 
-上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库
+在工程根目录下，另起一个控制台，运行“yarn start”，修改本地文件之后会自动编译发布，端口为9001
 
-数据库配置在application-dev.yaml文件中修改
-
-可另起一个控制台，运行yarn start，修改本地文件之后会自动编译发布，端口为9001
+上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库（数据库配置在application-dev.yaml文件中修改）
 
 注：
 在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
@@ -48,6 +49,8 @@
   set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
   
   npm install node-sass
+
+
 
 
 This application was generated using JHipster 4.0.8, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.8](https://jhipster.github.io/documentation-archive/v4.0.8).
