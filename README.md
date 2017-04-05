@@ -1,10 +1,28 @@
 # schintacloud
 
-环境准备：npm+yarn
+一、环境准备：npm+yarn
 npm修改国内镜像：https://cnodejs.org/topic/4f9904f9407edba21468f31e
 yarn：修改为国内镜像：https://my.oschina.net/jiangxinxin/blog/775326
 
-微服务模块：
+
+二、前端开发启动程序请见如下步骤，：
+    0、环境准备：npm+yarn（见上述环境准备内容）
+    1、剪出 git@101.37.16.131:wangyuannan/cqGateway.git 工程
+    2、在工程root 目录下，运行“yarn install” 安装包（见重要说明）；
+    3、修改配置 gateway\webpack\webpack.dev.js: 31行修改为：“target: 'http://10.172.71.172:9000'”， 38行修改为：target: 'ws://10.172.71.172:9000'
+    4、运行“yarn start”，即可启动
+    5、如想了解更多关于整个工程架构内容，见四、微服务模块
+
+
+三、重要说明
+
+在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
+
+  set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
+  npm install -g node-sass
+
+
+四、微服务模块：
 
 	1、服务注册器：jhipster-registry
 	
@@ -43,12 +61,7 @@ yarn：修改为国内镜像：https://my.oschina.net/jiangxinxin/blog/775326
 
 上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库（数据库配置在application-dev.yaml文件中修改）
 
-注：
-在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
 
-  set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
-  
-  npm install node-sass
 
 
 
