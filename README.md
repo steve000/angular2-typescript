@@ -1,6 +1,8 @@
 # schintacloud
 
 环境准备：npm+yarn
+npm修改国内镜像：https://cnodejs.org/topic/4f9904f9407edba21468f31e
+yarn：修改为国内镜像：https://my.oschina.net/jiangxinxin/blog/775326
 
 微服务模块：
 
