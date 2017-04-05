@@ -21,19 +21,20 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         proxy: [{
             context: [
                 '/schintauaa',
+                '/uaa',
                 '/api',
                 '/management',
                 '/swagger-resources',
                 '/v2/api-docs',
                 '/h2-console'
             ],
-            target: 'http://127.0.0.1:9001',
+            target: 'http://127.0.0.1:9000',
             secure: false
         },{
             context: [
                 '/websocket'
             ],
-            target: 'ws://127.0.0.1:9001',
+            target: 'ws://127.0.0.1:9000',
             ws: true
         }]
     },
