@@ -1,8 +1,28 @@
 # schintacloud
 
-环境准备：npm+yarn
+一、环境准备：npm+yarn
+npm修改国内镜像：https://cnodejs.org/topic/4f9904f9407edba21468f31e
+yarn：修改为国内镜像：https://my.oschina.net/jiangxinxin/blog/775326
 
-微服务模块：
+
+二、前端开发启动程序请见如下步骤，：
+    0、环境准备：npm+yarn（见上述环境准备内容）
+    1、剪出 git@101.37.16.131:wangyuannan/cqGateway.git 工程
+    2、在工程root 目录下，运行“yarn install” 安装包（见重要说明）；
+    3、修改配置 gateway\webpack\webpack.dev.js: 31行修改为：“target: 'http://10.172.71.172:9000'”， 38行修改为：target: 'ws://10.172.71.172:9000'
+    4、运行“yarn start”，即可启动
+    5、如想了解更多关于整个工程架构内容，见四、微服务模块
+
+
+三、重要说明
+
+在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
+
+  set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
+  npm install -g node-sass
+
+
+四、微服务模块：
 
 	1、服务注册器：jhipster-registry
 	
@@ -13,14 +33,14 @@
 	4、其他微服务提供者
 	
 
-1、服务注册器
+1、服务注册器（如果在公司内部环境进行开发，10.172.71.172:8761 已用docker 启动了服务注册，可以直接使用该服务，以节省本地资源。前端开发人员可以跳过此步骤）
 
 服务注册器下载地址：https://github.com/jhipster/jhipster-registry
 
 下载后，运行 mvnw.cmd 启动，默认端口为8761
 
 
-2、用户认证授权
+2、用户认证授权（注明：如果在公司内部环境进行开发，10.172.71.172:9090 已用docker 启动了uaa服务，可以直接使用该服务，以节省本地资源。前端开发人员可以跳过此步骤）
 
 提供用户的认证和授权的服务，请剪出 git@101.37.16.131:wangyuannan/cqUAA.git 工程
 
@@ -28,26 +48,22 @@
 
 运行 mvnw.cmd 启动服务，设置的端口为9090
 
+
 3、网关
 
 带有前端界面的网关工程。请剪出 git@101.37.16.131:wangyuannan/cqGateway.git 工程
 
-剪出后，运行“yarn install”
+剪出后，运行“yarn install”，安装工程依赖包。
 
-运行 mvnw.cmd 启动服务，设置的端口为9000
+运行 mvnw.cmd 启动后台服务，设置的端口为9000
 
-上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库
+在工程根目录下，另起一个控制台，运行“yarn start”，修改本地文件之后会自动编译发布，端口为9001
 
-数据库配置在application-dev.yaml文件中修改
+上述所有数据库均连接的是阿里云的数据库地址，剪出在本地做开发、测试时候，请先改为本地数据库（数据库配置在application-dev.yaml文件中修改）
 
-可另起一个控制台，运行yarn start，修改本地文件之后会自动编译发布，端口为9001
 
-注：
-在yarn install 时候，安装node-sass异常，解决办法如下(https://github.com/lmk123/blog/issues/28):
 
-  set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
-  
-  npm install node-sass
+
 
 
 This application was generated using JHipster 4.0.8, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.8](https://jhipster.github.io/documentation-archive/v4.0.8).
