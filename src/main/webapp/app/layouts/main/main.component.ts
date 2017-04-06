@@ -12,6 +12,7 @@ import { StateStorageService } from '../../shared';
     ]
 })
 export class JhiMainComponent implements OnInit {
+    isSidebarCollapsed: boolean;
 
     constructor(
         private titleService: Title,
@@ -47,5 +48,9 @@ export class JhiMainComponent implements OnInit {
                 this.$storageService.storeDestinationState(destination, params, from);
             }
         });
+    }
+
+    toggleSidebar() {
+        this.isSidebarCollapsed = !this.isSidebarCollapsed;
     }
 }

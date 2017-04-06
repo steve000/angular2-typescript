@@ -1,10 +1,10 @@
-<div class="layout-wrap">
+<div class="layout-wrap" [class.sidebar-collapsed]="isSidebarCollapsed">
     <div class="layout-sidebar">
-    	<router-outlet name="sidebar"></router-outlet>
+    	<jhi-sidebar></jhi-sidebar>
     </div>
     <div class="layout-main">
         <div class="navbar">
-            <router-outlet name="navbar"></router-outlet>
+            <jhi-navbar (toggleSidebar)="toggleSidebar()"></jhi-navbar>
         </div>
         <div class="container-fluid main-content">
             <router-outlet></router-outlet>

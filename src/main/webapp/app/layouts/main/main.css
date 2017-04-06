@@ -17,6 +17,7 @@ Main
 .main-content{
     margin-left: 260px;
     padding-top: 50px;
+    transition: margin-left .3s;
     // padding-bottom: 40px;
 }
 
@@ -33,4 +34,14 @@ Main
     color: #fff;
     padding: 9px 20px;
     line-height: 1.15;
+}
+
+.sidebar-collapsed .layout-sidebar{
+    margin-left: -260px;
+}
+.sidebar-collapsed .main-content{
+    margin-left: 0;
+}
+.sidebar-collapsed .navbar{
+    left: 0;
 }

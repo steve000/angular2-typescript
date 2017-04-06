@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
@@ -22,6 +22,8 @@ export class NavbarComponent implements OnInit {
     swaggerEnabled: boolean;
     modalRef: NgbModalRef;
     version: string;
+
+    @Output() toggleSidebar: EventEmitter<any> = new EventEmitter();
 
     constructor(
         private loginService: LoginService,
@@ -67,5 +69,9 @@ export class NavbarComponent implements OnInit {
 
     getImageUrl() {
         return this.isAuthenticated() ? this.principal.getImageUrl() : null;
+    }
+
+    toggle(){
+        this.toggleSidebar.emit(null);
     }
 }
