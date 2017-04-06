@@ -1,12 +1,36 @@
 /* ==========================================================================
 Main
 ========================================================================== */
-.sidebar{
+.layout-sidebar{
     width: 260px;
-    float: left;
     height: 100%;
-    background: #DDDDDD;
+    position: fixed;
+    z-index: 102;
+    overflow-y: auto;
+    transition: margin-left .3s;
+    background: #4e5159;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#4e5159),color-stop(100%,#1f2023));
+    background: -webkit-linear-gradient(top,#4e5159,#1f2023);
+    background: linear-gradient(180deg,#4e5159 0,#1f2023);
 }
-.main{
+
+.main-content{
     margin-left: 260px;
+    padding-top: 50px;
+    // padding-bottom: 40px;
+}
+
+.navbar{
+    position: fixed;
+    left: 260px;
+    right: 0;
+    top: 0;
+    z-index: 102;
+    padding: 0;
+    height: 50px;
+    background: #0388e5;
+    transition: left .3s;
+    color: #fff;
+    padding: 9px 20px;
+    line-height: 1.15;
 }

@@ -1,12 +1,12 @@
-<div class="sidebar">
-	<router-outlet name="sidebar"></router-outlet>
-</div>
-<div class="main">
-    <div class="navbar">
-        <router-outlet name="navbar"></router-outlet>
+<div class="layout-wrap">
+    <div class="layout-sidebar">
+    	<router-outlet name="sidebar"></router-outlet>
     </div>
-    <div class="container-fluid">
-        <div class="card jh-card">
+    <div class="layout-main">
+        <div class="navbar">
+            <router-outlet name="navbar"></router-outlet>
+        </div>
+        <div class="container-fluid main-content">
             <router-outlet></router-outlet>
             <router-outlet name="popup"></router-outlet>
         </div>
