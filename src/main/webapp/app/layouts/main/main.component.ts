@@ -12,7 +12,22 @@ import { StateStorageService } from '../../shared';
     ]
 })
 export class JhiMainComponent implements OnInit {
-
+    var data={{
+        NAME: '安居~中和', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '射洪~小河坝', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '小河坝~合川', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '合川~北碚', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '南充~武胜', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '武胜~合川', d1: '10~20', d2: '20~30', d3: '30~35'
+    },{
+        NAME: '罗渡溪~合川', d1: '10~20', d2: '20~30', d3: '30~35'
+    }}; 
+    
     constructor(
         private titleService: Title,
         private router: Router,
