@@ -88,6 +88,5 @@ public class MicroserviceSecurityConfiguration extends ResourceServerConfigurerA
         return (String) keyUriRestTemplate
             .exchange("http://schintauaa/oauth/token_key", HttpMethod.GET, request, Map.class).getBody()
             .get("value");
-
     }
 }

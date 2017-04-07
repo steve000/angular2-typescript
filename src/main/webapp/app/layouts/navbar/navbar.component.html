@@ -1,4 +1,30 @@
-<nav class="navbar navbar-inverse navbar-toggleable-md jh-navbar">
+<nav>
+    <a href="javascript:;" class="menu-button" (click)="toggle()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <span class="nav-title">Test Title</span>
+    <a href="javascript:;" class="options-menu-button">
+        <i class="fa fa-ellipsis-h"></i>
+    </a>
+    <div class="nav-tools">
+        <a href="javascript:;" class="tools-item">
+            <span class="tools-item-text">消息</span>
+            <i class="fa fa-envelope-o tools-item-icon"></i>
+        </a>
+        <a href="javascript:;" class="tools-item">
+            <span class="tools-item-text">设置</span>
+            <i class="fa fa-gear tools-item-icon"></i>
+        </a>
+        <a href="javascript:;" class="tools-item">
+            <span class="tools-item-text">用户</span>
+            <i class="fa fa-user tools-item-icon"></i>
+        </a>
+    </div>
+</nav>
+
+
+<!-- 下面是原始的html，暂未删除留作参考 -->
+<nav class="navbar navbar-inverse navbar-toggleable-md jh-navbar" *ngIf="fsfsdfsf">
     <div class="jh-logo-container float-left">
         <a class="jh-navbar-toggler hidden-lg-up float-right" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
             <i class="fa fa-bars"></i>

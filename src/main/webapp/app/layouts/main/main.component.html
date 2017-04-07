@@ -1,13 +1,12 @@
-<jhi-page-ribbon></jhi-page-ribbon>
-<div class="sidebar">
-	<router-outlet name="sidebar"></router-outlet>
-</div>
-<div class="main">
-    <div class="navbar">
-        <router-outlet name="navbar"></router-outlet>
+<div class="layout-wrap" [class.sidebar-collapsed]="isSidebarCollapsed">
+    <div class="layout-sidebar">
+    	<jhi-sidebar></jhi-sidebar>
     </div>
-    <div class="container-fluid">
-        <div class="card jh-card">
+    <div class="layout-main">
+        <div class="navbar">
+            <jhi-navbar (toggleSidebar)="toggleSidebar()"></jhi-navbar>
+        </div>
+        <div class="container-fluid main-content">
             <router-outlet></router-outlet>
             <router-outlet name="popup"></router-outlet>
         </div>

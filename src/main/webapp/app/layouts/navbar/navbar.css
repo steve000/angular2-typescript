@@ -81,3 +81,41 @@ Logo styles
     background-size: contain;
     width: 100%;
 }
+
+/* new */
+nav a{
+    color: #FFF;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color .3s;
+}
+nav a:hover{
+    color: #77c7ff;
+}
+
+.menu-button{
+    float: left;
+}
+.nav-title{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 0 0 15px;
+    vertical-align: top;
+}
+.options-menu-button{
+    float: right;
+    display: none;
+}
+.nav-tools{
+    float: right;
+}
+.nav-tools a{
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-tools a .tools-item-text{
+    font-size: 20px;
+    display: none;
+}
+
+.tmp{}
