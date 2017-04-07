@@ -2,3 +2,70 @@
 Sidebar
 ========================================================================== */
 
+
+/* sidebar menu */
+:host >>> .ui-accordion .ui-accordion-header{
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid #4e5159;
+    background: none;
+
+}
+:host >>> .ui-accordion .ui-accordion-header a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: padding-left .3s, color .3s;
+}
+:host >>> .ui-accordion .ui-accordion-header .fa{
+    left: auto;
+    right: 0.5em;
+    color: #FFF;
+}
+:host >>> .ui-accordion .ui-accordion-header .fa:before{
+    content: "\F107";
+}
+:host >>> .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover{
+    background: none;
+    color: #FFF;
+    border-top: 1px solid #4e5159;
+}
+:host >>> .ui-accordion .ui-accordion-header:not(.ui-state-disabled):hover a{
+    color: #2399e5;
+    padding-left: 20px;
+}
+:host >>> .ui-accordion .ui-accordion-header:not(.ui-state-disabled):hover .fa{
+    color: #2399e5
+}
+:host >>> .ui-accordion .ui-accordion-header.ui-state-active{
+    background: #2e3035;
+}
+:host >>> .ui-accordion .ui-accordion-header.ui-state-active a,
+:host >>> .ui-accordion .ui-accordion-header.ui-state-active .fa{
+    color: #2399e5;
+}
+:host >>> .ui-accordion .ui-accordion-header.ui-state-active .fa:before{
+    content: '\F106';
+}
+:host >>> .ui-accordion .ui-accordion-content{
+    background: #2e3035;
+    padding: 0;
+}
+:host >>> .ui-accordion .ui-accordion-content ul{
+    margin: 0; 
+    padding: 0;
+}
+:host >>> .ui-accordion .ui-accordion-content li{
+    list-style: none;
+}
+:host >>> .ui-accordion .ui-accordion-content li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #FFF;
+    transition: padding-left .3s, color .3s;
+}
+:host >>> .ui-accordion .ui-accordion-content li a:hover{
+    color: #2399e5;
+    padding-left: 30px;
+}

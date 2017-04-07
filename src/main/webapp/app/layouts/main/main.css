@@ -36,6 +36,12 @@ Main
     line-height: 1.15;
 }
 
+:host >>> .footer {
+    border-top: 1px solid rgba(0,0,0,.125);
+    margin-left: 260px;
+    transition: margin-left .3s;
+}
+
 .sidebar-collapsed .layout-sidebar{
     margin-left: -260px;
 }
@@ -44,4 +50,7 @@ Main
 }
 .sidebar-collapsed .navbar{
     left: 0;
+}
+:host >>> .sidebar-collapsed .footer{
+    margin-left: 0;
 }
