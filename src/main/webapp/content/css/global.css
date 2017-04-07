@@ -75,11 +75,6 @@ table td[class*=col-], table th[class*=col-] {
     float: none;
 }
 
-.footer {
-    border-top: 1px solid rgba(0,0,0,.125);
-    margin-left: 260px;
-}
-
 /* ==========================================================================
 make sure browsers use the pointer cursor for anchors, even with no href
 ========================================================================== */
@@ -202,71 +197,5 @@ ui bootstrap tweaks
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
 
-/* sidebar menu */
-.layout-sidebar .ui-accordion .ui-accordion-header{
-    border-radius: 0;
-    border: 0;
-    border-top: 1px solid #4e5159;
-    background: none;
-
-}
-.layout-sidebar .ui-accordion .ui-accordion-header a{
-    color: #FFF;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: padding-left .3s, color .3s;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header .fa{
-    left: auto;
-    right: 0.5em;
-    color: #FFF;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header .fa:before{
-    content: "\F107";
-}
-.layout-sidebar .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover{
-    background: none;
-    color: #FFF;
-    border-top: 1px solid #4e5159;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header:not(.ui-state-disabled):hover a{
-    color: #2399e5;
-    padding-left: 20px;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header:not(.ui-state-disabled):hover .fa{
-    color: #2399e5
-}
-.layout-sidebar .ui-accordion .ui-accordion-header.ui-state-active{
-    background: #2e3035;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header.ui-state-active a,
-.layout-sidebar .ui-accordion .ui-accordion-header.ui-state-active .fa{
-    color: #2399e5;
-}
-.layout-sidebar .ui-accordion .ui-accordion-header.ui-state-active .fa:before{
-    content: '\F106';
-}
-.layout-sidebar .ui-accordion .ui-accordion-content{
-    background: #2e3035;
-    padding: 0;
-}
-.layout-sidebar .ui-accordion .ui-accordion-content ul{
-    margin: 0; 
-    padding: 0;
-}
-.layout-sidebar .ui-accordion .ui-accordion-content li{
-    list-style: none;
-}
-.layout-sidebar .ui-accordion .ui-accordion-content li a{
-    display: block;
-    text-decoration: none;
-    padding: 8px 25px;
-    color: #FFF;
-    transition: padding-left .3s, color .3s;
-}
-.layout-sidebar .ui-accordion .ui-accordion-content li a:hover{
-    color: #2399e5;
-    padding-left: 30px;
-}
 
 .tmp{}
