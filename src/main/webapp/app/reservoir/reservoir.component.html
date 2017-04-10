@@ -1,0 +1,21 @@
+<span>切换站点：</span>
+<p-dropdown [options]="cities" [(ngModel)]="selectedCity"></p-dropdown>
+<div id='tab'>
+	<p-tabView>
+	    <p-tabPanel header="水位-入库-出库过程线">
+	    	<ruku></ruku>
+	    </p-tabPanel>
+	    <p-tabPanel header="水库水位过程" >
+	    	<swgc></swgc>
+	    </p-tabPanel>
+	    <p-tabPanel header="旬月特征值对比">
+	    </p-tabPanel>
+	    <p-tabPanel header="库容曲线">
+	    </p-tabPanel>
+	    <p-tabPanel header="防洪特征">
+	    </p-tabPanel>
+	    <p-tabPanel header="工程特性">
+	    	<gctx></gctx>
+	    </p-tabPanel>
+	</p-tabView>
+</div>

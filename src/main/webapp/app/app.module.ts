@@ -9,6 +9,7 @@ import { Ng2Webstorage } from 'ng2-webstorage';
 import { SchintacloudSharedModule, UserRouteAccessService } from './shared';
 import { SchintacloudHomeModule } from './home/home.module';
 import { SchintacloudBlankModule } from './blank/blank.module';
+import { SchintacloudReservoirModule } from './reservoir/reservoir.module';
 import { SchintacloudAdminModule } from './admin/admin.module';
 import { SchintacloudAccountModule } from './account/account.module';
 import { SchintacloudEntityModule } from './entities/entity.module';
@@ -16,6 +17,7 @@ import { SchintacloudEntityModule } from './entities/entity.module';
 import { LayoutRoutingModule } from './layouts';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
+
 
 import {
     JhiMainComponent,
@@ -38,7 +40,8 @@ import {
         SchintacloudBlankModule,
         SchintacloudAdminModule,
         SchintacloudAccountModule,
-        SchintacloudEntityModule
+        SchintacloudEntityModule,
+        SchintacloudReservoirModule,
     ],
     declarations: [
         JhiMainComponent,
