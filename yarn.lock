@@ -150,6 +150,16 @@
     magic-string "^0.19.0"
     source-map "^0.5.6"
 
+"@types/geojson@*":
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/@types/geojson/download/@types/geojson-1.0.1.tgz#f4783b464989c96929ef84604e95fa2ebd05ef6e"
+
+"@types/highcharts@^4.2.47":
+  version "4.2.54"
+  resolved "http://registry.npm.taobao.org/@types/highcharts/download/@types/highcharts-4.2.54.tgz#b803fd15a7d45f124483213b437e9cdb6cb24fe2"
+  dependencies:
+    "@types/geojson" "*"
+
 "@types/jasmine@2.5.42":
   version "2.5.42"
   resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.5.42.tgz#60ed723d08d2ddd277333ebe1e39761b46fdb755"
@@ -243,6 +253,13 @@ amdefine@1.0.0, amdefine@>=0.0.4, amdefine@^1.0.0:
 angular2-cookie@1.2.6:
   version "1.2.6"
   resolved "http://registry.npm.taobao.org/angular2-cookie/download/angular2-cookie-1.2.6.tgz#8fa845531e777adb042fe2f339c0040f6ddbf09d"
+
+angular2-highcharts@^0.5.5:
+  version "0.5.5"
+  resolved "http://registry.npm.taobao.org/angular2-highcharts/download/angular2-highcharts-0.5.5.tgz#f4a19ea96d63524420fd5c65136ac027b05266fd"
+  dependencies:
+    "@types/highcharts" "^4.2.47"
+    highcharts "^5.0.7"
 
 angular2-infinite-scroll@0.3.0:
   version "0.3.0"
@@ -3202,6 +3219,10 @@ he@1.1.x:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+highcharts@^5.0.10, highcharts@^5.0.7:
+  version v5.0.10
+  resolved "http://registry.npm.taobao.org/highcharts/download/highcharts-5.0.10.tgz#7a432c39a3c27992314ab17e45ecf29bd1a91132"
+
 hmac-drbg@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/hmac-drbg/download/hmac-drbg-1.0.0.tgz#3db471f45aae4a994a0688322171f51b8b91bee5"
@@ -3943,16 +3964,9 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/js-tokens/download/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
-js-yaml@3.8.2:
+js-yaml@3.8.2, js-yaml@3.x:
   version "3.8.2"
   resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.8.2.tgz#02d3e2c0f6beab20248d412c352203827d786721"
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^3.1.1"
-
-js-yaml@3.x:
-  version "3.8.1"
-  resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.8.1.tgz#782ba50200be7b9e5a8537001b7804db3ad02628"
   dependencies:
     argparse "^1.0.7"
     esprima "^3.1.1"
@@ -6103,7 +6117,7 @@ request-progress@~2.0.1:
   dependencies:
     throttleit "^1.0.0"
 
-request@2, request@^2.72.0, request@^2.79.0, request@~2.79.0:
+request@2, request@^2.40.0, request@^2.72.0, request@^2.74.0, request@^2.79.0, request@~2.79.0:
   version "2.79.0"
   resolved "http://registry.npm.taobao.org/request/download/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:
@@ -6153,7 +6167,7 @@ request@2.78.0:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
 
-request@^2.40.0, request@^2.74.0, request@^2.81.0:
+request@^2.81.0:
   version "2.81.0"
   resolved "http://registry.npm.taobao.org/request/download/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:

@@ -1,0 +1,11 @@
+时间: <p-calendar [(ngModel)]="startTime" [inline]="false" dateFormat="yy-mm-dd"
+                 [locale]="en" [showIcon]="true">
+</p-calendar><span>--</span>
+<p-calendar [(ngModel)]="endTime" [inline]="false" dateFormat="yy-mm-dd"
+             [locale]="en" [showIcon]="true">
+</p-calendar>
+水位:<input type="radio" name="clicktab" value="">流量:<input type="radio" name="clicktab" value="">
+<p-dropdown [options]="years" [(ngModel)]="selectedYear" [style]="{'width':'150px'}"></p-dropdown>
+<button pButton type="button" (click)="onclick()" label="确定"></button>
+<span>{{aa}}</span>
+<chart [options]="options" (load)="saveChart($event.context)"></chart>
