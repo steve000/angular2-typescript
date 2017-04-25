@@ -14,8 +14,8 @@ export class WaterLineComponent implements OnInit {
 
     chart: any;
 
-    startTime: Date;
-    endTime: Date;
+    startTime: any;
+    endTime: any;
     en: any;
 
     constructor(private waterlineService: WaterLineService) {
@@ -100,7 +100,7 @@ export class WaterLineComponent implements OnInit {
 
     outDataY(): void {
         this.waterlineService
-            .outDataY()
+            .outDataY(this.startTime,this.endTime)
             .then(data => {
                 this.chart.series[0].setData(data);
             });

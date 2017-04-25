@@ -15,19 +15,19 @@ var WaterLineComponent = (function () {
             title: {
                 text: '水位/流量过程线',
                 align: 'left',
-                style: { 'color': '#333333', 'fontSize': '18px', 'fontWeight': 'bold' }
+                style: { 'color': '#333333', 'fontSize': '18px', 'fontWeight': 'bold' },
             },
             series: [{
                     name: '水位(m)',
-                    data: []
+                    data: [],
                 }, {
-                    name: '流量(m³/s)'
+                    name: '流量(m³/s)',
                 }, {
-                    name: '警戒水位'
+                    name: '警戒水位',
                 }, {
-                    name: '保证水位'
+                    name: '保证水位',
                 }, {
-                    name: '最高水位'
+                    name: '最高水位',
                 }],
             xAxis: {
                 // tickInterval: 3600 * 1000, // 坐标轴刻度间隔为一小时
@@ -47,7 +47,7 @@ var WaterLineComponent = (function () {
             },
             yAxis: [{
                     title: {
-                        text: '水位(m)'
+                        text: '水位(m)',
                     },
                     labels: {
                         align: 'left',
@@ -61,7 +61,7 @@ var WaterLineComponent = (function () {
                     gridLineWidth: 0,
                     opposite: true,
                     title: {
-                        text: '流量(m³/s)'
+                        text: '流量(m³/s)',
                     },
                     labels: {
                         align: 'right',
@@ -72,7 +72,7 @@ var WaterLineComponent = (function () {
                     showFirstLabel: false
                 }],
             chart: {
-                type: 'line'
+                type: 'line',
             }
         };
     }
@@ -93,7 +93,7 @@ var WaterLineComponent = (function () {
     WaterLineComponent.prototype.outDataY = function () {
         var _this = this;
         this.waterlineService
-            .outDataY()
+            .outDataY(this.startTime, this.endTime)
             .then(function (data) {
             _this.chart.series[0].setData(data);
         });
@@ -114,10 +114,9 @@ var WaterLineComponent = (function () {
             selector: 'waterline',
             templateUrl: 'waterline.component.html',
             styleUrls: ['./waterline.component.css'],
-            providers: [waterline_service_1.WaterLineService]
+            providers: [waterline_service_1.WaterLineService],
         })
     ], WaterLineComponent);
     return WaterLineComponent;
 }());
 exports.WaterLineComponent = WaterLineComponent;
-//# sourceMappingURL=waterline.component.js.map

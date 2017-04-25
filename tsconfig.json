@@ -13,6 +13,10 @@
         "lib": ["es6", "dom"],
         "typeRoots": [
             "node_modules/@types"
+        ],
+        "files": [
+            "typings/tsd.d.ts",
+            "main.ts"
         ]
     },
     "include": [
