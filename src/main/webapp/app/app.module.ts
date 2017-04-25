@@ -11,6 +11,7 @@ import { SchintacloudHomeModule } from './home/home.module';
 import { SchintacloudBlankModule } from './blank/blank.module';
 import { SchintacloudBlankWithChildModule } from './blank-with-child/blank.module';
 import { SchintacloudReservoirModule } from './reservoir/reservoir.module';
+import { SchintacloudRiverwayModule } from './riverway/riverway.module';
 import { SchintacloudAdminModule } from './admin/admin.module';
 import { SchintacloudAccountModule } from './account/account.module';
 import { SchintacloudEntityModule } from './entities/entity.module';
@@ -44,6 +45,7 @@ import {
         SchintacloudAccountModule,
         SchintacloudEntityModule,
         SchintacloudReservoirModule,
+        SchintacloudRiverwayModule,
     ],
     declarations: [
         JhiMainComponent,

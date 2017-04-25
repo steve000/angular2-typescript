@@ -20,18 +20,18 @@ export class RukuchukuComponent implements OnInit {
             }]
         };
     }
-    
+
     ngOnInit() {
     	this.getData();
     };
 
     getData(): void {
 		this.dataService.getData().then(data => {
-			this.rData=data; 
+			this.rData=data;
 			console.log(data);
 		});
 	};
-	
+
 	transData(data){
 		console.log(data);
 		var array:any[]=[];

@@ -1,0 +1,9 @@
+时间: <p-calendar [(ngModel)]="startTime" [inline]="false" dateFormat="yy-mm-dd"
+                 [locale]="en" [showIcon]="true">
+</p-calendar><span>--</span>
+<p-calendar [(ngModel)]="endTime" [inline]="false" dateFormat="yy-mm-dd"
+             [locale]="en" [showIcon]="true">
+</p-calendar>
+<button pButton type="button" (click)="onclick()" label="确定"></button>clicks: {{clicks}}
+<span>{{aa}}</span>
+<chart [options]="options" (load)="saveChart($event.context)"></chart>

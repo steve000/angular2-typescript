@@ -1,0 +1,24 @@
+<span>切换站点：</span>
+<p-dropdown [options]="cities" [(ngModel)]="selectedCity" [style]="{'width':'300px'}"></p-dropdown>
+<div id='tab'>
+	<p-tabView>
+	    <p-tabPanel header="水位/流量过程线">
+            <waterline></waterline>
+	    </p-tabPanel>
+	    <p-tabPanel header="与历史同期对比" >
+            <historycompare></historycompare>
+	    </p-tabPanel>
+	    <p-tabPanel header="多站对比">
+            <sitecompare></sitecompare>
+	    </p-tabPanel>
+	    <p-tabPanel header="旬月特征值对比">
+            <valuecompare></valuecompare>
+	    </p-tabPanel>
+	    <p-tabPanel header="水位流量关系曲线">
+            <waterlever></waterlever>
+        </p-tabPanel>
+	    <p-tabPanel header="工程特性">
+            <engine></engine>
+        </p-tabPanel>
+	</p-tabView>
+</div>
