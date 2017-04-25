@@ -9,6 +9,7 @@ import { Ng2Webstorage } from 'ng2-webstorage';
 import { SchintacloudSharedModule, UserRouteAccessService } from './shared';
 import { SchintacloudHomeModule } from './home/home.module';
 import { SchintacloudBlankModule } from './blank/blank.module';
+import { SchintacloudBlankWithChildModule } from './blank-with-child/blank.module';
 import { SchintacloudReservoirModule } from './reservoir/reservoir.module';
 import { SchintacloudAdminModule } from './admin/admin.module';
 import { SchintacloudAccountModule } from './account/account.module';
@@ -38,6 +39,7 @@ import {
         SchintacloudSharedModule,
         SchintacloudHomeModule,
         SchintacloudBlankModule,
+        SchintacloudBlankWithChildModule,
         SchintacloudAdminModule,
         SchintacloudAccountModule,
         SchintacloudEntityModule,
